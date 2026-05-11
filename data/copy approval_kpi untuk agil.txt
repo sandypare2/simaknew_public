@@ -1,0 +1,35 @@
+INSERT INTO approval_kpi (
+    tahun, jenis_kpi, kd_area, kd_divisi, level_kpi, 
+    nip, kode_cascading, kode_cascading2, kode_kpi,
+    approve01, approval01,
+    approve02, approval02,
+    approve03, approval03,
+    approve04, approval04,
+    approve05, approval05,
+    approve06, approval06,
+    approve07, approval07,
+    approve08, approval08,
+    approve09, approval09,
+    approve10, approval10,
+    approve11, approval11,
+    approve12, approval12
+)
+SELECT 
+    tahun, jenis_kpi, kd_area, kd_divisi, level_kpi, 
+    '92171742ZY' AS nip,
+    kode_cascading, kode_cascading2,
+    CONCAT('92171742ZY', SUBSTRING(kode_kpi, LENGTH(nip) + 1)) AS kode_kpi,
+    approve01, approval01,
+    approve02, approval02,
+    approve03, approval03,
+    approve04, approval04,
+    approve05, approval05,
+    approve06, approval06,
+    approve07, approval07,
+    approve08, approval08,
+    approve09, approval09,
+    approve10, approval10,
+    approve11, approval11,
+    approve12, approval12
+FROM approval_kpi
+WHERE nip = '8409196Z';

@@ -1,0 +1,43 @@
+INSERT INTO finalisasi_kpi (
+    tahun, jenis_kpi, kd_area, kd_divisi, level_kpi, 
+    nip, kode_cascading, kode_cascading2, kode_kpi,
+    realisasi01bkn, realisasi01bkl, realisasi01bwk, nilai01bkn, nilai01bkl, nilai01bwk, realisasi01b,
+    realisasi02bkn, realisasi02bkl, realisasi02bwk, nilai02bkn, nilai02bkl, nilai02bwk, realisasi02b,
+    realisasi03bkn, realisasi03bkl, realisasi03bwk, nilai03bkn, nilai03bkl, nilai03bwk, realisasi03b,
+    realisasi04bkn, realisasi04bkl, realisasi04bwk, nilai04bkn, nilai04bkl, nilai04bwk, realisasi04b,
+    realisasi05bkn, realisasi05bkl, realisasi05bwk, nilai05bkn, nilai05bkl, nilai05bwk, realisasi05b,
+    realisasi06bkn, realisasi06bkl, realisasi06bwk, nilai06bkn, nilai06bkl, nilai06bwk, realisasi06b,
+    realisasi07bkn, realisasi07bkl, realisasi07bwk, nilai07bkn, nilai07bkl, nilai07bwk, realisasi07b,
+    realisasi08bkn, realisasi08bkl, realisasi08bwk, nilai08bkn, nilai08bkl, nilai08bwk, realisasi08b,
+    realisasi09bkn, realisasi09bkl, realisasi09bwk, nilai09bkn, nilai09bkl, nilai09bwk, realisasi09b,
+    realisasi10bkn, realisasi10bkl, realisasi10bwk, nilai10bkn, nilai10bkl, nilai10bwk, realisasi10b,
+    realisasi11bkn, realisasi11bkl, realisasi11bwk, nilai11bkn, nilai11bkl, nilai11bwk, realisasi11b,
+    realisasi12bkn, realisasi12bkl, realisasi12bwk, nilai12bkn, nilai12bkl, nilai12bwk, realisasi12b,
+    kuantitasb_semester1, kualitasb_semester1, waktub_semester1, nilaib_semester1,
+    kuantitasb_semester2, kualitasb_semester2, waktub_semester2, nilaib_semester2,
+    eviden01, eviden02, eviden03, eviden04, eviden05, eviden06,
+    eviden07, eviden08, eviden09, eviden10, eviden11, eviden12
+)
+SELECT 
+    tahun, jenis_kpi, kd_area, kd_divisi, level_kpi, 
+    '92171742ZY' AS nip,
+    kode_cascading, kode_cascading2,
+    CONCAT('92171742ZY', SUBSTRING(kode_kpi, LENGTH(nip) + 1)) AS kode_kpi,
+    realisasi01bkn, realisasi01bkl, realisasi01bwk, nilai01bkn, nilai01bkl, nilai01bwk, realisasi01b,
+    realisasi02bkn, realisasi02bkl, realisasi02bwk, nilai02bkn, nilai02bkl, nilai02bwk, realisasi02b,
+    realisasi03bkn, realisasi03bkl, realisasi03bwk, nilai03bkn, nilai03bkl, nilai03bwk, realisasi03b,
+    realisasi04bkn, realisasi04bkl, realisasi04bwk, nilai04bkn, nilai04bkl, nilai04bwk, realisasi04b,
+    realisasi05bkn, realisasi05bkl, realisasi05bwk, nilai05bkn, nilai05bkl, nilai05bwk, realisasi05b,
+    realisasi06bkn, realisasi06bkl, realisasi06bwk, nilai06bkn, nilai06bkl, nilai06bwk, realisasi06b,
+    realisasi07bkn, realisasi07bkl, realisasi07bwk, nilai07bkn, nilai07bkl, nilai07bwk, realisasi07b,
+    realisasi08bkn, realisasi08bkl, realisasi08bwk, nilai08bkn, nilai08bkl, nilai08bwk, realisasi08b,
+    realisasi09bkn, realisasi09bkl, realisasi09bwk, nilai09bkn, nilai09bkl, nilai09bwk, realisasi09b,
+    realisasi10bkn, realisasi10bkl, realisasi10bwk, nilai10bkn, nilai10bkl, nilai10bwk, realisasi10b,
+    realisasi11bkn, realisasi11bkl, realisasi11bwk, nilai11bkn, nilai11bkl, nilai11bwk, realisasi11b,
+    realisasi12bkn, realisasi12bkl, realisasi12bwk, nilai12bkn, nilai12bkl, nilai12bwk, realisasi12b,
+    kuantitasb_semester1, kualitasb_semester1, waktub_semester1, nilaib_semester1,
+    kuantitasb_semester2, kualitasb_semester2, waktub_semester2, nilaib_semester2,
+    eviden01, eviden02, eviden03, eviden04, eviden05, eviden06,
+    eviden07, eviden08, eviden09, eviden10, eviden11, eviden12
+FROM finalisasi_kpi
+WHERE nip = '8409196Z';

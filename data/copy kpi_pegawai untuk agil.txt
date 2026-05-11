@@ -1,0 +1,43 @@
+INSERT INTO kpi_pegawai (
+    tahun, jenis_kpi, kd_area, kd_divisi, level_kpi, 
+    nip, kode_cascading, kode_cascading2, kode_kpi,
+    realisasi01kn, realisasi01kl, realisasi01wk, nilai01kn, nilai01kl, nilai01wk, realisasi01,
+    realisasi02kn, realisasi02kl, realisasi02wk, nilai02kn, nilai02kl, nilai02wk, realisasi02,
+    realisasi03kn, realisasi03kl, realisasi03wk, nilai03kn, nilai03kl, nilai03wk, realisasi03,
+    realisasi04kn, realisasi04kl, realisasi04wk, nilai04kn, nilai04kl, nilai04wk, realisasi04,
+    realisasi05kn, realisasi05kl, realisasi05wk, nilai05kn, nilai05kl, nilai05wk, realisasi05,
+    realisasi06kn, realisasi06kl, realisasi06wk, nilai06kn, nilai06kl, nilai06wk, realisasi06,
+    realisasi07kn, realisasi07kl, realisasi07wk, nilai07kn, nilai07kl, nilai07wk, realisasi07,
+    realisasi08kn, realisasi08kl, realisasi08wk, nilai08kn, nilai08kl, nilai08wk, realisasi08,
+    realisasi09kn, realisasi09kl, realisasi09wk, nilai09kn, nilai09kl, nilai09wk, realisasi09,
+    realisasi10kn, realisasi10kl, realisasi10wk, nilai10kn, nilai10kl, nilai10wk, realisasi10,
+    realisasi11kn, realisasi11kl, realisasi11wk, nilai11kn, nilai11kl, nilai11wk, realisasi11,
+    realisasi12kn, realisasi12kl, realisasi12wk, nilai12kn, nilai12kl, nilai12wk, realisasi12,
+    kuantitas_semester1, kualitas_semester1, waktu_semester1, nilai_semester1,
+    kuantitas_semester2, kualitas_semester2, waktu_semester2, nilai_semester2,
+    eviden01, eviden02, eviden03, eviden04, eviden05, eviden06,
+    eviden07, eviden08, eviden09, eviden10, eviden11, eviden12
+)
+SELECT 
+    tahun, jenis_kpi, kd_area, kd_divisi, level_kpi, 
+    '92171742ZY' AS nip,
+    kode_cascading, kode_cascading2, 
+    CONCAT('92171742ZY', SUBSTRING(kode_kpi, LENGTH(nip) + 1)) AS kode_kpi,
+    realisasi01kn, realisasi01kl, realisasi01wk, nilai01kn, nilai01kl, nilai01wk, realisasi01,
+    realisasi02kn, realisasi02kl, realisasi02wk, nilai02kn, nilai02kl, nilai02wk, realisasi02,
+    realisasi03kn, realisasi03kl, realisasi03wk, nilai03kn, nilai03kl, nilai03wk, realisasi03,
+    realisasi04kn, realisasi04kl, realisasi04wk, nilai04kn, nilai04kl, nilai04wk, realisasi04,
+    realisasi05kn, realisasi05kl, realisasi05wk, nilai05kn, nilai05kl, nilai05wk, realisasi05,
+    realisasi06kn, realisasi06kl, realisasi06wk, nilai06kn, nilai06kl, nilai06wk, realisasi06,
+    realisasi07kn, realisasi07kl, realisasi07wk, nilai07kn, nilai07kl, nilai07wk, realisasi07,
+    realisasi08kn, realisasi08kl, realisasi08wk, nilai08kn, nilai08kl, nilai08wk, realisasi08,
+    realisasi09kn, realisasi09kl, realisasi09wk, nilai09kn, nilai09kl, nilai09wk, realisasi09,
+    realisasi10kn, realisasi10kl, realisasi10wk, nilai10kn, nilai10kl, nilai10wk, realisasi10,
+    realisasi11kn, realisasi11kl, realisasi11wk, nilai11kn, nilai11kl, nilai11wk, realisasi11,
+    realisasi12kn, realisasi12kl, realisasi12wk, nilai12kn, nilai12kl, nilai12wk, realisasi12,
+    kuantitas_semester1, kualitas_semester1, waktu_semester1, nilai_semester1,
+    kuantitas_semester2, kualitas_semester2, waktu_semester2, nilai_semester2,
+    eviden01, eviden02, eviden03, eviden04, eviden05, eviden06,
+    eviden07, eviden08, eviden09, eviden10, eviden11, eviden12
+FROM kpi_pegawai
+WHERE nip = '8409196Z';

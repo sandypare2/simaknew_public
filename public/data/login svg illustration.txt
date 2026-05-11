@@ -1,0 +1,194 @@
+<svg viewBox="0 0 600 800" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+                        <defs>
+                            <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#0f3460;stop-opacity:1" />
+                            </linearGradient>
+                            
+                            <linearGradient id="planeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#16a085;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#1abc9c;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        
+                        <!-- Background -->
+                        <rect width="600" height="800" fill="url(#skyGradient)"/>
+                        
+                        <!-- Stars -->
+                        <circle cx="80" cy="100" r="2" fill="#ffffff" opacity="0.8">
+                            <animate attributeName="opacity" values="0.8;0.3;0.8" dur="3s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="150" cy="150" r="1.5" fill="#ffffff" opacity="0.6">
+                            <animate attributeName="opacity" values="0.6;0.2;0.6" dur="4s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="500" cy="120" r="2" fill="#ffffff" opacity="0.7">
+                            <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2.5s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="550" cy="180" r="1.5" fill="#ffffff" opacity="0.5">
+                            <animate attributeName="opacity" values="0.5;0.2;0.5" dur="3.5s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="200" cy="80" r="1.5" fill="#ffffff" opacity="0.6">
+                            <animate attributeName="opacity" values="0.6;0.3;0.6" dur="3s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="450" cy="250" r="2" fill="#ffffff" opacity="0.7">
+                            <animate attributeName="opacity" values="0.7;0.2;0.7" dur="4s" repeatCount="indefinite"/>
+                        </circle>
+                        
+                        <!-- Title Text -->
+                        <text x="300" y="100" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#1abc9c" text-anchor="middle">
+                            SI-SUPER
+                            <animate attributeName="opacity" values="0;1" dur="2s" fill="freeze"/>
+                        </text>
+                        
+                        <!-- Subtitle -->
+                        <text x="300" y="140" font-family="Arial, sans-serif" font-size="20" fill="#ecf0f1" text-anchor="middle" opacity="0.8">
+                            Sistem Informasi Surat Perjalanan Dinas
+                            <animate attributeName="opacity" values="0;0.8" dur="2s" begin="0.5s" fill="freeze"/>
+                        </text>
+                        
+                        <!-- Main Airplane -->
+                        <g id="mainPlane">
+                            <!-- Fuselage -->
+                            <ellipse cx="150" cy="290" rx="55" ry="12" fill="url(#planeGradient)" stroke="#0d7566" stroke-width="2"/>
+                            <!-- Cockpit -->
+                            <path d="M 195 290 Q 210 290 215 285 Q 210 280 195 280 Z" fill="#3498db" stroke="#2980b9" stroke-width="1.5"/>
+                            <!-- Main Wings -->
+                            <path d="M 140 290 L 120 270 L 125 268 L 150 285 Z" fill="#16a085" stroke="#0d7566" stroke-width="2"/>
+                            <path d="M 140 290 L 120 310 L 125 312 L 150 295 Z" fill="#16a085" stroke="#0d7566" stroke-width="2"/>
+                            <!-- Tail Wing -->
+                            <path d="M 100 290 L 85 275 L 90 274 L 105 287 Z" fill="#1abc9c" stroke="#0d7566" stroke-width="1.5"/>
+                            <path d="M 100 290 L 85 305 L 90 306 L 105 293 Z" fill="#1abc9c" stroke="#0d7566" stroke-width="1.5"/>
+                            <!-- Vertical Stabilizer -->
+                            <path d="M 95 290 L 85 280 L 90 279 L 100 288 Z" fill="#16a085" stroke="#0d7566" stroke-width="1.5"/>
+                            <!-- Windows -->
+                            <circle cx="180" cy="290" r="3" fill="#2c3e50" opacity="0.7"/>
+                            <circle cx="170" cy="290" r="3" fill="#2c3e50" opacity="0.7"/>
+                            <circle cx="160" cy="290" r="3" fill="#2c3e50" opacity="0.7"/>
+                            <!-- Engine details -->
+                            <ellipse cx="145" cy="278" rx="8" ry="5" fill="#2c3e50" opacity="0.6"/>
+                            <ellipse cx="145" cy="302" rx="8" ry="5" fill="#2c3e50" opacity="0.6"/>
+                            <animateTransform attributeName="transform" type="translate" values="0,0; 400,100; 0,0" dur="15s" repeatCount="indefinite"/>
+                        </g>
+                        
+                        <!-- Location Pin Icon 1 -->
+                        <g id="locationPin1" opacity="0">
+                            <path d="M 130 380 C 130 365 140 355 155 355 C 170 355 180 365 180 380 C 180 395 155 420 155 420 C 155 420 130 395 130 380 Z" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+                            <circle cx="155" cy="380" r="5" fill="#ffffff"/>
+                            <animate attributeName="opacity" values="0;1;1;0" dur="8s" begin="2s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="translate" values="0,-20; 0,0; 0,0; 0,-20" dur="8s" begin="2s" repeatCount="indefinite"/>
+                        </g>
+                        
+                        <!-- Camera Icon -->
+                        <g id="camera" opacity="0">
+                            <rect x="420" y="400" width="60" height="45" rx="5" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+                            <circle cx="450" cy="422" r="15" fill="#2c3e50" stroke="#34495e" stroke-width="2"/>
+                            <circle cx="450" cy="422" r="8" fill="#ecf0f1"/>
+                            <rect x="465" y="405" width="10" height="8" rx="2" fill="#2980b9"/>
+                            <animate attributeName="opacity" values="0;1;1;0" dur="8s" begin="4s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="scale" values="0.8;1.1;1;0.8" dur="8s" begin="4s" repeatCount="indefinite" additive="sum"/>
+                            <animateTransform attributeName="transform" type="translate" values="0,0" additive="sum"/>
+                        </g>
+                        
+                        <!-- Compass Icon -->
+                        <g id="compass" opacity="0">
+                            <circle cx="300" cy="520" r="35" fill="#34495e" stroke="#2c3e50" stroke-width="3"/>
+                            <circle cx="300" cy="520" r="28" fill="none" stroke="#e74c3c" stroke-width="2"/>
+                            <path d="M 300 500 L 310 520 L 300 540 L 290 520 Z" fill="#e74c3c"/>
+                            <path d="M 300 500 L 305 520 L 300 540 L 295 520 Z" fill="#ffffff"/>
+                            <animate attributeName="opacity" values="0;1;1;0" dur="8s" begin="6s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="rotate" values="0 300 520; 360 300 520" dur="8s" begin="6s" repeatCount="indefinite"/>
+                        </g>
+                        
+                        <!-- Suitcase Icon -->
+                        <g id="suitcase">
+                            <rect x="450" y="640" width="70" height="55" rx="5" fill="#f39c12" stroke="#d68910" stroke-width="3"/>
+                            <rect x="470" y="630" width="30" height="10" rx="3" fill="#d68910"/>
+                            <line x1="465" y1="650" x2="505" y2="650" stroke="#d68910" stroke-width="2"/>
+                            <line x1="465" y1="670" x2="505" y2="670" stroke="#d68910" stroke-width="2"/>
+                            <circle cx="485" cy="667" r="4" fill="#2c3e50"/>
+                            <animate attributeName="opacity" values="1;0.7;1" dur="3s" repeatCount="indefinite"/>
+                        </g>
+                        
+                        <!-- Globe Icon -->
+                        <g id="globe">
+                            <circle cx="150" cy="620" r="40" fill="#3498db" stroke="#2980b9" stroke-width="3" opacity="0.9"/>
+                            <ellipse cx="150" cy="620" rx="40" ry="15" fill="none" stroke="#2c3e50" stroke-width="2"/>
+                            <ellipse cx="150" cy="620" rx="15" ry="40" fill="none" stroke="#2c3e50" stroke-width="2"/>
+                            <line x1="110" y1="620" x2="190" y2="620" stroke="#2c3e50" stroke-width="2"/>
+                            <animateTransform attributeName="transform" type="rotate" values="0 150 620; 360 150 620" dur="20s" repeatCount="indefinite"/>
+                        </g>
+                        
+                        <!-- Map Marker 2 -->
+                        <g id="mapMarker2" opacity="0">
+                            <path d="M 410 240 C 410 225 420 215 435 215 C 450 215 460 225 460 240 C 460 255 435 280 435 280 C 435 280 410 255 410 240 Z" fill="#9b59b6" stroke="#8e44ad" stroke-width="2"/>
+                            <circle cx="435" cy="240" r="5" fill="#ffffff"/>
+                            <animate attributeName="opacity" values="0;1;1;0" dur="8s" begin="1s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="translate" values="0,-15; 0,0; 0,0; 0,-15" dur="8s" begin="1s" repeatCount="indefinite"/>
+                        </g>
+                        
+                        <!-- Small Airplane Icon -->
+                        <g id="smallPlane" opacity="0">
+                            <!-- Fuselage -->
+                            <ellipse cx="270" cy="455" rx="28" ry="6" fill="#1abc9c" stroke="#16a085" stroke-width="1.5"/>
+                            <!-- Cockpit -->
+                            <path d="M 295 455 Q 303 455 306 452 Q 303 449 295 449 Z" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+                            <!-- Main Wings -->
+                            <path d="M 265 455 L 255 445 L 258 444 L 270 452 Z" fill="#16a085" stroke="#0d7566" stroke-width="1.5"/>
+                            <path d="M 265 455 L 255 465 L 258 466 L 270 458 Z" fill="#16a085" stroke="#0d7566" stroke-width="1.5"/>
+                            <!-- Tail Wing -->
+                            <path d="M 245 455 L 238 448 L 240 447 L 247 453 Z" fill="#1abc9c" stroke="#0d7566" stroke-width="1"/>
+                            <path d="M 245 455 L 238 462 L 240 463 L 247 457 Z" fill="#1abc9c" stroke="#0d7566" stroke-width="1"/>
+                            <!-- Vertical Stabilizer -->
+                            <path d="M 243 455 L 237 449 L 240 448 L 246 453 Z" fill="#16a085" stroke="#0d7566" stroke-width="1"/>
+                            <!-- Windows -->
+                            <circle cx="283" cy="455" r="1.5" fill="#2c3e50" opacity="0.7"/>
+                            <circle cx="277" cy="455" r="1.5" fill="#2c3e50" opacity="0.7"/>
+                            <animate attributeName="opacity" values="0;1;1;0" dur="8s" begin="3s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="translate" values="-50,20; 50,-20; -50,20" dur="8s" begin="3s" repeatCount="indefinite"/>
+                        </g>
+                        
+                        <!-- Hotel/Building Icon -->
+                        <g id="hotel">
+                            <rect x="80" y="710" width="50" height="60" rx="3" fill="#e67e22" stroke="#d35400" stroke-width="2"/>
+                            <rect x="88" y="720" width="12" height="12" fill="#f39c12"/>
+                            <rect x="108" y="720" width="12" height="12" fill="#f39c12"/>
+                            <rect x="88" y="740" width="12" height="12" fill="#f39c12"/>
+                            <rect x="108" y="740" width="12" height="12" fill="#f39c12"/>
+                            <rect x="95" y="755" width="20" height="15" fill="#2c3e50"/>
+                            <animate attributeName="opacity" values="0.9;1;0.9" dur="4s" repeatCount="indefinite"/>
+                        </g>
+                        
+                        <!-- Ticket Icon -->
+                        <g id="ticket" opacity="0">
+                            <rect x="360" y="560" width="80" height="40" rx="4" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+                            <line x1="395" y1="565" x2="395" y2="595" stroke="#c0392b" stroke-width="2" stroke-dasharray="5,5"/>
+                            <rect x="368" y="570" width="20" height="8" rx="2" fill="#ffffff"/>
+                            <rect x="368" y="582" width="20" height="8" rx="2" fill="#ffffff"/>
+                            <animate attributeName="opacity" values="0;1;1;0" dur="8s" begin="5s" repeatCount="indefinite"/>
+                            <animateTransform attributeName="transform" type="translate" values="0,10; 0,0; 0,0; 0,10" dur="8s" begin="5s" repeatCount="indefinite"/>
+                        </g>
+                        
+                        <!-- Cloud 1 -->
+                        <g opacity="0.3">
+                            <ellipse cx="100" cy="200" rx="30" ry="20" fill="#ecf0f1"/>
+                            <ellipse cx="120" cy="195" rx="35" ry="25" fill="#ecf0f1"/>
+                            <ellipse cx="140" cy="200" rx="30" ry="20" fill="#ecf0f1"/>
+                            <animateTransform attributeName="transform" type="translate" values="0,0; 600,0; 0,0" dur="60s" repeatCount="indefinite"/>
+                        </g>
+                        
+                        <!-- Cloud 2 -->
+                        <g opacity="0.2">
+                            <ellipse cx="400" cy="340" rx="40" ry="25" fill="#ecf0f1"/>
+                            <ellipse cx="430" cy="335" rx="45" ry="30" fill="#ecf0f1"/>
+                            <ellipse cx="460" cy="340" rx="35" ry="25" fill="#ecf0f1"/>
+                            <animateTransform attributeName="transform" type="translate" values="0,0; -600,0; 0,0" dur="80s" repeatCount="indefinite"/>
+                        </g>
+                        
+                        <!-- Cloud 3 -->
+                        <g opacity="0.25">
+                            <ellipse cx="200" cy="480" rx="35" ry="22" fill="#ecf0f1"/>
+                            <ellipse cx="230" cy="475" rx="40" ry="27" fill="#ecf0f1"/>
+                            <ellipse cx="260" cy="480" rx="32" ry="22" fill="#ecf0f1"/>
+                            <animateTransform attributeName="transform" type="translate" values="0,0; 600,0; 0,0" dur="70s" repeatCount="indefinite"/>
+                        </g>
+                        </svg>
