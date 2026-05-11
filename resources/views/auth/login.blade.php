@@ -1,6 +1,6 @@
 @extends('partials.layouts.master-auth')
 
-@section('title', 'Sign In | SIMAK')
+@section('title', 'Sign In | SIMAK ')
 
 @section('css')
     @include('partials.head-css', ['auth' => 'layout-auth'])
